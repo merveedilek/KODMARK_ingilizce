@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="anaBaslik" xml:space="preserve">
+    <value>PRINTERS</value>
+  </data>
+  <data name="a_BaskiGenislik" xml:space="preserve">
+    <value>104 mm Printing Width</value>
+  </data>
+  <data name="a_BaskiHizi" xml:space="preserve">
+    <value>Max. 102 mm</value>
+  </data>
+  <data name="a_BaskiMetod" xml:space="preserve">
+    <value>Direct Thermal / Thermal Transfer Barcode Printer</value>
+  </data>
+  <data name="a_BaskiUzunluk" xml:space="preserve">
+    <value>1.092 mm Print Length</value>
+  </data>
+  <data name="a_Baslik1" xml:space="preserve">
+    <value>ARGOX</value>
+  </data>
+  <data name="a_Baslik2" xml:space="preserve">
+    <value>OS-214 PLUS</value>
+  </data>
+  <data name="a_Cozunurluk" xml:space="preserve">
+    <value>203 DPI</value>
+  </data>
+  <data name="a_dil" xml:space="preserve">
+    <value>PPLA ve PPLB</value>
+  </data>
+  <data name="a_hafiza" xml:space="preserve">
+    <value>8 MB DRAM, 4 MB Flash Memory</value>
+  </data>
+  <data name="BaskiGenişligi" xml:space="preserve">
+    <value>Print Width:</value>
+  </data>
+  <data name="BaskiHizi" xml:space="preserve">
+    <value>Print Speed:</value>
+  </data>
+  <data name="BaskiMetodu" xml:space="preserve">
+    <value>Printing Method:</value>
+  </data>
+  <data name="BaskiUzunluk" xml:space="preserve">
+    <value>Print Length:</value>
+  </data>
+  <data name="baslik" xml:space="preserve">
+    <value>DESKTOP PRINTERS</value>
+  </data>
+  <data name="cozunurluk" xml:space="preserve">
+    <value>Resolution:</value>
+  </data>
+  <data name="diger" xml:space="preserve">
+    <value>DİĞER</value>
+  </data>
+  <data name="evBaslik1" xml:space="preserve">
+    <value>TOSHIBA</value>
+  </data>
+  <data name="evBaslik2" xml:space="preserve">
+    <value>B-EV4T</value>
+  </data>
+  <data name="ev_BaskiGenislik" xml:space="preserve">
+    <value>108 mm</value>
+  </data>
+  <data name="ev_BaskiHizi" xml:space="preserve">
+    <value>127 mm</value>
+  </data>
+  <data name="ev_BaskiMetod" xml:space="preserve">
+    <value>Direct Thermal (No Ribbon) / Thermal Transfer (Ribbed)</value>
+  </data>
+  <data name="ev_BaskiUzunluk" xml:space="preserve">
+    <value>995 mm</value>
+  </data>
+  <data name="ev_Cozunurluk" xml:space="preserve">
+    <value>203 DPI</value>
+  </data>
+  <data name="ev_dil" xml:space="preserve">
+    <value>TPL</value>
+  </data>
+  <data name="ev_Hafiza" xml:space="preserve">
+    <value>8 MB DRAM, 4 MB Flash Memory</value>
+  </data>
+  <data name="ev_Port" xml:space="preserve">
+    <value>Serial + Parallel + Usb 2.0 + Lan</value>
+  </data>
+  <data name="fvBaslik1" xml:space="preserve">
+    <value>TOSHIBA</value>
+  </data>
+  <data name="fvBaslik2" xml:space="preserve">
+    <value>B-FV4T</value>
+  </data>
+  <data name="fv_BaskiGenislik" xml:space="preserve">
+    <value>108 mm max.</value>
+  </data>
+  <data name="fv_BaskiHizi" xml:space="preserve">
+    <value>152,4 mm.</value>
+  </data>
+  <data name="fv_BaskiMetod" xml:space="preserve">
+    <value>Direct Thermal (No Ribbon) / Thermal Transfer (Ribbed)</value>
+  </data>
+  <data name="fv_BaskiUzunluk" xml:space="preserve">
+    <value>995 mm</value>
+  </data>
+  <data name="fv_Cozunurluk" xml:space="preserve">
+    <value>203 DPI</value>
+  </data>
+  <data name="fv_dil" xml:space="preserve">
+    <value>TPCL</value>
+  </data>
+  <data name="fv_Hafiza" xml:space="preserve">
+    <value>8 MB DRAM, 4 MB Flash Memory</value>
+  </data>
+  <data name="fv_iletisim" xml:space="preserve">
+    <value>Serial + Parallel + Usb 2.0 + Lan</value>
+  </data>
+  <data name="fv_Port" xml:space="preserve">
+    <value>Serial + Parallel + Usb 2.0 + Lan</value>
+  </data>
+  <data name="Hafiza" xml:space="preserve">
+    <value>Memory:</value>
+  </data>
+  <data name="iletisimPort" xml:space="preserve">
+    <value>Communication Ports:</value>
+  </data>
+  <data name="ProgramDil" xml:space="preserve">
+    <value>Programming Languages:</value>
+  </data>
+  <data name="urun" xml:space="preserve">
+    <value>PRODUCTS</value>
+  </data>
+  <data name="zBaslik1" xml:space="preserve">
+    <value>ZEBRA</value>
+  </data>
+  <data name="zBaslik2" xml:space="preserve">
+    <value>GC-420T</value>
+  </data>
+  <data name="z_BaskiGenislik" xml:space="preserve">
+    <value>104 mm104 mm.</value>
+  </data>
+  <data name="z_BaskiHizi" xml:space="preserve">
+    <value>102 mm/s.</value>
+  </data>
+  <data name="z_BaskiMetod" xml:space="preserve">
+    <value>Direct Thermal.</value>
+  </data>
+  <data name="z_baskiUzunluk" xml:space="preserve">
+    <value>991 mm.</value>
+  </data>
+  <data name="z_cozunurluk" xml:space="preserve">
+    <value>203 dpi (8 dot/mm)</value>
+  </data>
+  <data name="z_dil" xml:space="preserve">
+    <value>EPL2, ZPL I/ZPL II.</value>
+  </data>
+  <data name="z_hafiza" xml:space="preserve">
+    <value>Standard; 8 MB SDRAM, 8 MB Flash.</value>
+  </data>
+</root>

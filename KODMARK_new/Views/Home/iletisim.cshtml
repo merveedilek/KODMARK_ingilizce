@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "iletisim";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- Main container start -->
+    <div class="container osayfa" style="width:60%">
+        <section id="main-container" style="padding-left:0px; padding-right:0px">
+
+
+            <div id="banner-area" style="text-align:center; ">
+
+                <img class="mobilLogo" src="~/Content/images/other/kodmark_logo.png" alt="" style="width:20%; height:20%; object-fit:cover; margin-top:70px" />
+                <div class="parallax-overlay"></div>
+                <!-- Subpage title start -->
+
+            </div><!-- Banner area end -->
+
+            <div class="container" style="padding-right:0px !important; padding-left:0px !important">
+                <div class="row">
+                    <div class="col-md-7 col-xs-12 col-sm-12 col-lg-7 col-xl-7">
+
+                        @using (Html.BeginForm("iletisim", "Home", FormMethod.Post, new { @id = "contact-form" }))
+                        {
+
+                            <div class="row" style="padding:10px !important">
+                                <div class="col-md-6 col-xs-12 col-xl-6 col-lg-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label style="color:red">Name</label>
+                                        <input class="form-control" name="Ad" id="name" placeholder="Your Name" type="text" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-xs-12 col-xl-6 col-lg-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label style="color:red">E-Mail</label>
+                                        <input class="form-control" name="Mail" id="email"
+                                               placeholder="Your E-mail" type="email" required>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="padding:20px !important">
+                                <div class="form-group">
+                                    <label style="color:red">Message</label>
+                                    <textarea class="form-control" name="Mesaj" id="message" placeholder="Your Message" rows="10" required></textarea>
+                                </div>
+                                <div class="text-right mobilButon">
+                                    <br>
+                                    <button class="btn btn-primary solid blank " type="submit">Send</button>
+                                </div>
+                            </div>
+
+                        }
+
+                    </div>
+
+                    <div class="col-md-5 col-xs-12 col-xl-5 col-lg-5 col-sm-12" style="padding-right:40px">
+                        <div class="contact-info">
+                            <h3 class="text-center">CONTACT INFORMATION</h3>
+                            <p class="text-center">
+                                <i class="fa fa-home info"></i> Sanayi Neighb.
+                                <br />
+                                Ensar St. No:35/3 <br />
+                                Pendik / İSTANBUL
+                            </p>
+                            <p class="text-center"><i class="fa fa-phone info"></i><a href="tel:#" style="color:black">+90(216) 390 16 31</a></p>
+                            <p class="text-center"><i class="fa fa-envelope-o info"></i><a href="mailto:#" style="color:black"> info@kodmark.com</a></p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-md-12">
+                        <iframe  height="400" frameborder="0" style="border: 0px;margin-top:10px; width:100%" allowfullscreen="" src="https://www.google.com/maps/embed/v1/place?q=Kodmark+Etiket+Barkod+Ambalaj+San.+ve+Tic.+Ltd.+Şti.,+Pendik,+Turkey&amp;key=AIzaSyBf-p1uoNo-7lDr8UzCaEANuTDMPbniPuc"></iframe>
+                    </div>
+                </div>
+
+            </div><!--/ container end -->
+
+        </section><!--/ Main container end -->
+    </div>

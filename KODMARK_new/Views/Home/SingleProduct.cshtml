@@ -1,0 +1,95 @@
+﻿@model KODMARK_new.Models.SingleProductModel
+@{
+    ViewBag.Title = "SingleProduct";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" style="width:80%">
+    <section id="home" style="margin-top:-25px" class="no-padding">
+
+        <div id="main-slide" class="ts-flex-slider">
+
+            <div class="flexSlideshow flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="overlay2">
+                            <img class="" src="~/Content/images/slides/resim8.jpg" alt="slider" style="height:100%; width:100%; object-fit:cover">
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="overlay2">
+                            <img class="" src="~/Content/images/slides/resim4.jpg" alt="slider" style="height:100%; width:100%; object-fit:cover">
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="overlay2">
+                            <img class="" src="~/Content/images/slides/resim3.jpg" alt="slider" style="height:100%; width:100%; object-fit:cover">
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="overlay2">
+                            <img class="" src="~/Content/images/slides/resim10.JPG" alt="slider" style="height:100%; width:100%; object-fit:cover">
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="overlay2">
+                            <img class="" src="~/Content/images/slides/okuyucu2.jpg" alt="slider" style="height:100%; width:100%; object-fit:cover">
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div><!--/ Main slider end -->
+
+    </section> <!--/ Slider end -->
+</div>
+<!-- Portfolio item start -->
+<div class="container" style="width:80%">
+    <section id="portfolio-item">
+
+        <!-- Portfolio item row start -->
+        <div class="row" style="margin-top:15px">
+            <!-- Portfolio item slider start -->
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <div class="portfolio-slider">
+                    <div class="flexportfolio flexslider">
+                        <ul class="slides">
+                            @foreach (var item in Model.ProductImages)
+                            {
+                                <li>
+                                    <img src="~/Content/images/products/@item.ImagePath" alt="" style="width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: 20% 15%">
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Portfolio item slider end -->
+            <!-- sidebar start -->
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                <div class="sidebar">
+                    <div class="portfolio-desc">
+                        <h3 class="widget-title" style="margin-bottom:5px">@Model.ProductName</h3>
+                        <p>
+                            @Model.Description
+                        </p>
+                        <br />
+                        <h3 class="widget-title" style="margin-bottom:5px">AREAS OF USE</h3>
+                        <p>@Model.Definition</p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- sidebar end -->
+        </div><!-- Portfolio item row end -->
+
+    </section><!-- Portfolio item end -->
+</div><!-- Container end -->

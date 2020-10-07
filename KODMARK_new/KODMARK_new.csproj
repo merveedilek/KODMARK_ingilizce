@@ -1,0 +1,722 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76ABD182-A997-465B-AB7E-4AECADF9B666}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KODMARK_new</RootNamespace>
+    <AssemblyName>KODMARK_new</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44364</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\cd-hero copy.css" />
+    <Content Include="Content\css\cd-hero.css" />
+    <Content Include="Content\css\flexslider.css" />
+    <Content Include="Content\css\font-awesome.css" />
+    <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\owl.carousel.css" />
+    <Content Include="Content\css\owl.theme.css" />
+    <Content Include="Content\css\presets\preset1.css" />
+    <Content Include="Content\css\presets\preset2.css" />
+    <Content Include="Content\css\presets\preset3.css" />
+    <Content Include="Content\css\presets\preset4.css" />
+    <Content Include="Content\css\presets\preset5.css" />
+    <Content Include="Content\css\presets\preset6.css" />
+    <Content Include="Content\css\prettyPhoto.css" />
+    <Content Include="Content\css\responsive.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\jaapokki\jaapokki-regular.svg" />
+    <Content Include="Content\images\edura-logo.png" />
+    <Content Include="Content\images\favicon.png" />
+    <Content Include="Content\images\kodmark_logo.png" />
+    <Content Include="Content\images\kodmark_logo1.png" />
+    <Content Include="Content\images\other\anasayfa.png" />
+    <Content Include="Content\images\other\contact.png" />
+    <Content Include="Content\images\other\corporate.jpg" />
+    <Content Include="Content\images\other\kodmark_logo.png" />
+    <Content Include="Content\images\other\mission.png" />
+    <Content Include="Content\images\other\support.jpg" />
+    <Content Include="Content\images\other\values.png" />
+    <Content Include="Content\images\other\visionn.png" />
+    <Content Include="Content\images\portfolio\ccd.jpg" />
+    <Content Include="Content\images\portfolio\coklulazer.jpg" />
+    <Content Include="Content\images\portfolio\endustriyel.jpg" />
+    <Content Include="Content\images\portfolio\imager.png" />
+    <Content Include="Content\images\portfolio\kablosuz.jpg" />
+    <Content Include="Content\images\portfolio\karekod.jpg" />
+    <Content Include="Content\images\portfolio\manyetik.jpg" />
+    <Content Include="Content\images\portfolio\portfolio1.jpg" />
+    <Content Include="Content\images\portfolio\portfolio2.jpg" />
+    <Content Include="Content\images\portfolio\portfolio3.jpg" />
+    <Content Include="Content\images\portfolio\portfolio4.jpg" />
+    <Content Include="Content\images\portfolio\portfolio5.jpg" />
+    <Content Include="Content\images\portfolio\portfolio6.jpg" />
+    <Content Include="Content\images\portfolio\teklilazer.jpg" />
+    <Content Include="Content\images\products\about.png" />
+    <Content Include="Content\images\products\about2.png" />
+    <Content Include="Content\images\products\about3.png" />
+    <Content Include="Content\images\products\aboutGorsel.png" />
+    <Content Include="Content\images\products\aboutGorsel2.png" />
+    <Content Include="Content\images\products\aboutt.png" />
+    <Content Include="Content\images\products\apf.jpg" />
+    <Content Include="Content\images\products\apn.jpg" />
+    <Content Include="Content\images\products\argox.jpg" />
+    <Content Include="Content\images\products\argoxmobil.jpg" />
+    <Content Include="Content\images\products\demir.jpg" />
+    <Content Include="Content\images\products\endüstriyel.jpg" />
+    <Content Include="Content\images\products\ep4.jpg" />
+    <Content Include="Content\images\products\ev4t.png" />
+    <Content Include="Content\images\products\fasty1.jpg" />
+    <Content Include="Content\images\products\fasty2.jpg" />
+    <Content Include="Content\images\products\fasty3.png" />
+    <Content Include="Content\images\products\floresan1.jpg" />
+    <Content Include="Content\images\products\floresan2.jpg" />
+    <Content Include="Content\images\products\floresan3.jpg" />
+    <Content Include="Content\images\products\fvt.jpg" />
+    <Content Include="Content\images\products\gidaetiket.jpg" />
+    <Content Include="Content\images\products\godex.png" />
+    <Content Include="Content\images\products\hakkimizda.png" />
+    <Content Include="Content\images\products\hotfoil.png" />
+    <Content Include="Content\images\products\hotfoil1.png" />
+    <Content Include="Content\images\products\hotfoil2.jpg" />
+    <Content Include="Content\images\products\hotfoil3.jpg" />
+    <Content Include="Content\images\products\imz.jpg" />
+    <Content Include="Content\images\products\kimyaetiketi.jpg" />
+    <Content Include="Content\images\products\kodmark.jpg" />
+    <Content Include="Content\images\products\kodmark2.png" />
+    <Content Include="Content\images\products\koli.jpg" />
+    <Content Include="Content\images\products\kozmetik.jpg" />
+    <Content Include="Content\images\products\kuse1.png" />
+    <Content Include="Content\images\products\kuse2.png" />
+    <Content Include="Content\images\products\kuse3.png" />
+    <Content Include="Content\images\products\kuyumcu1.png" />
+    <Content Include="Content\images\products\kuyumcu2.jpg" />
+    <Content Include="Content\images\products\kuyumcu3.jpg" />
+    <Content Include="Content\images\products\kırılgan1.jpg" />
+    <Content Include="Content\images\products\kırılgan2.jpg" />
+    <Content Include="Content\images\products\kırılgan3.jpg" />
+    <Content Include="Content\images\products\madeniyağetiketi.jpg" />
+    <Content Include="Content\images\products\masaustubarkod.jpg" />
+    <Content Include="Content\images\products\nearEdge.png" />
+    <Content Include="Content\images\products\nearedge2.jpg" />
+    <Content Include="Content\images\products\nearedge3.png" />
+    <Content Include="Content\images\products\opak1.png" />
+    <Content Include="Content\images\products\opak2.png" />
+    <Content Include="Content\images\products\opak3.jpg" />
+    <Content Include="Content\images\products\pp opak etiket.jpg" />
+    <Content Include="Content\images\products\pp opak etiket.png" />
+    <Content Include="Content\images\products\qln.jpg" />
+    <Content Include="Content\images\products\renkliribon2.jpg" />
+    <Content Include="Content\images\products\renkliribon3.png" />
+    <Content Include="Content\images\products\resin ribon.png" />
+    <Content Include="Content\images\products\Resin1.png" />
+    <Content Include="Content\images\products\resin2.png" />
+    <Content Include="Content\images\products\resin3.png" />
+    <Content Include="Content\images\products\rrenkliribon.jpg" />
+    <Content Include="Content\images\products\silvermat 2.png" />
+    <Content Include="Content\images\products\silvermat.jpg" />
+    <Content Include="Content\images\products\silvermat.png" />
+    <Content Include="Content\images\products\silvermat1.png" />
+    <Content Include="Content\images\products\silvermat2.jpg" />
+    <Content Include="Content\images\products\silvermat3.png" />
+    <Content Include="Content\images\products\tarihkodlama.jpg" />
+    <Content Include="Content\images\products\tekstiletiketi.jpg" />
+    <Content Include="Content\images\products\temizlikurun.jpg" />
+    <Content Include="Content\images\products\termal.png" />
+    <Content Include="Content\images\products\termal1.png" />
+    <Content Include="Content\images\products\termal2.png" />
+    <Content Include="Content\images\products\termal3.jpg" />
+    <Content Include="Content\images\products\toshiba.jpg" />
+    <Content Include="Content\images\products\towa.jpg" />
+    <Content Include="Content\images\products\vellum.png" />
+    <Content Include="Content\images\products\vellum1.jpg" />
+    <Content Include="Content\images\products\vellum2.png" />
+    <Content Include="Content\images\products\vellum3.jpg" />
+    <Content Include="Content\images\products\wax2.jpg" />
+    <Content Include="Content\images\products\wax3.jpg" />
+    <Content Include="Content\images\products\WaxResin1.jpg" />
+    <Content Include="Content\images\products\waxResin2.jpg" />
+    <Content Include="Content\images\products\waxResin3.jpg" />
+    <Content Include="Content\images\products\waxRibon.jpg" />
+    <Content Include="Content\images\products\yemcuval.jpg" />
+    <Content Include="Content\images\products\yemcuvali1.jpg" />
+    <Content Include="Content\images\products\yemcuvali2.png" />
+    <Content Include="Content\images\products\yemvecuval.jpg" />
+    <Content Include="Content\images\products\zebragc.png" />
+    <Content Include="Content\images\slides\accessories.jpg" />
+    <Content Include="Content\images\slides\apf.jpg" />
+    <Content Include="Content\images\slides\barkod1.png" />
+    <Content Include="Content\images\slides\endüstriyel.jpg" />
+    <Content Include="Content\images\slides\ep4.jpg" />
+    <Content Include="Content\images\slides\etiket-sarici.jpg" />
+    <Content Include="Content\images\slides\ev4t.png" />
+    <Content Include="Content\images\slides\okuyucu1.jpg" />
+    <Content Include="Content\images\slides\okuyucu2.jpg" />
+    <Content Include="Content\images\slides\qln.jpg" />
+    <Content Include="Content\images\slides\raf-etiket.jpg" />
+    <Content Include="Content\images\slides\resim1.JPG" />
+    <Content Include="Content\images\slides\resim10.JPG" />
+    <Content Include="Content\images\slides\resim2.JPG" />
+    <Content Include="Content\images\slides\resim3.JPG" />
+    <Content Include="Content\images\slides\resim4.JPG" />
+    <Content Include="Content\images\slides\resim6.png" />
+    <Content Include="Content\images\slides\resim7.JPG" />
+    <Content Include="Content\images\slides\resim8.jpg" />
+    <Content Include="Content\images\slides\resim9.JPG" />
+    <Content Include="Content\images\slides\ribon.jpg" />
+    <Content Include="Content\images\slides\rulo1.jpg" />
+    <Content Include="Content\images\slides\towa.jpg" />
+    <Content Include="Content\images\slides\yazici1.JPG" />
+    <Content Include="Content\images\slides\yazici2.jpg" />
+    <Content Include="Content\images\slides\yazilim.png" />
+    <Content Include="Content\images\team\thumb1.jpg" />
+    <Content Include="Content\images\team\thumb1_40.jpg" />
+    <Content Include="Content\images\team\thumb3_40.jpg" />
+    <Content Include="Content\images\team\thumb4_40.jpg" />
+    <Content Include="Content\images\team\thumb5_40.jpg" />
+    <Content Include="Content\images\team\thumb6.jpg" />
+    <Content Include="Content\images\team\thumb7.jpg" />
+    <Content Include="Content\images\team\thumb8.jpg" />
+    <Content Include="Content\images\team\thumb8_40.jpg" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\cd-hero.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\gmap3.js" />
+    <Content Include="Content\js\html5shiv.js" />
+    <Content Include="Content\js\ini.isotope.js" />
+    <Content Include="Content\js\isotope.js" />
+    <Content Include="Content\js\jquery.counterup.min.js" />
+    <Content Include="Content\js\jquery.easing.1.3.js" />
+    <Content Include="Content\js\jquery.flexslider.js" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\jquery.min.js" />
+    <Content Include="Content\js\jquery.prettyPhoto.js" />
+    <Content Include="Content\js\owl.carousel.js" />
+    <Content Include="Content\js\respond.min.js" />
+    <Content Include="Content\js\smoothscroll.js" />
+    <Content Include="Content\js\style-switcher.js" />
+    <Content Include="Content\js\waypoints.min.js" />
+    <Content Include="Content\js\wow.min.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\videos\video.mp4" />
+    <Content Include="Content\videos\video.webm" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\jaapokki\jaapokki-regular.eot" />
+    <Content Include="Content\fonts\jaapokki\jaapokki-regular.ttf" />
+    <Content Include="Content\fonts\jaapokki\jaapokki-regular.woff" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\KodmarkData.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\iletisim.cs" />
+    <Compile Include="Models\ProductImage.cs" />
+    <Compile Include="Models\SingleProductModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AboutText.ar.Designer.cs" />
+    <Compile Include="Resources\AboutText.ar1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AboutText.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AboutText.az.Designer.cs" />
+    <Compile Include="Resources\AboutText.az1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AboutText.az.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AboutText.Designer.cs" />
+    <Compile Include="Resources\AboutText.en.Designer.cs" />
+    <Compile Include="Resources\AboutText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AboutText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AboutText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AboutText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BarcodeAccessoriesText.Designer.cs" />
+    <Compile Include="Resources\BarcodeAccessoriesText.en.Designer.cs" />
+    <Compile Include="Resources\BarcodeAccessoriesText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeAccessoriesText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BarcodeAccessoriesText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeAccessoriesText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BarcodeReaderText.Designer.cs" />
+    <Compile Include="Resources\BarcodeReaderText.en.Designer.cs" />
+    <Compile Include="Resources\BarcodeReaderText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeReaderText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BarcodeReaderText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BarcodeReaderText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BlankLabelText.Designer.cs" />
+    <Compile Include="Resources\BlankLabelText.en.Designer.cs" />
+    <Compile Include="Resources\BlankLabelText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlankLabelText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BlankLabelText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BlankLabelText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ContactText.Designer.cs" />
+    <Compile Include="Resources\ContactText.en.Designer.cs" />
+    <Compile Include="Resources\ContactText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ContactText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DesktopPrinterText.Designer.cs" />
+    <Compile Include="Resources\DesktopPrinterText.en.Designer.cs" />
+    <Compile Include="Resources\DesktopPrinterText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DesktopPrinterText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\DesktopPrinterText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DesktopPrinterText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndexText.ar.Designer.cs" />
+    <Compile Include="Resources\IndexText.ar1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndexText.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndexText.az.Designer.cs" />
+    <Compile Include="Resources\IndexText.az1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndexText.az.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndexText.Designer.cs" />
+    <Compile Include="Resources\IndexText.en.Designer.cs" />
+    <Compile Include="Resources\IndexText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndexText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndexText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndexText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndustrialPrintersText.Designer.cs" />
+    <Compile Include="Resources\IndustrialPrintersText.en.Designer.cs" />
+    <Compile Include="Resources\IndustrialPrintersText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndustrialPrintersText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\IndustrialPrintersText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IndustrialPrintersText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LayoutText.ar.Designer.cs" />
+    <Compile Include="Resources\LayoutText.ar1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LayoutText.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LayoutText.az.Designer.cs" />
+    <Compile Include="Resources\LayoutText.az1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LayoutText.az.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LayoutText.Designer.cs" />
+    <Compile Include="Resources\LayoutText.en.Designer.cs" />
+    <Compile Include="Resources\LayoutText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LayoutText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LayoutText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LayoutText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\MobilePrinterText.Designer.cs" />
+    <Compile Include="Resources\MobilePrinterText.en.Designer.cs" />
+    <Compile Include="Resources\MobilePrinterText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobilePrinterText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\MobilePrinterText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobilePrinterText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PrintedLabelText.Designer.cs" />
+    <Compile Include="Resources\PrintedLabelText.en.Designer.cs" />
+    <Compile Include="Resources\PrintedLabelText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintedLabelText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PrintedLabelText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintedLabelText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RibonText.Designer.cs" />
+    <Compile Include="Resources\RibonText.en.Designer.cs" />
+    <Compile Include="Resources\RibonText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RibonText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RibonText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RibonText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\VisionText.Designer.cs" />
+    <Compile Include="Resources\VisionText.en.Designer.cs" />
+    <Compile Include="Resources\VisionText.en1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisionText.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\VisionText1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VisionText.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Home\Hakkimizda.cshtml" />
+    <Content Include="Views\Home\Vision.cshtml" />
+    <Content Include="Views\Home\BaskiliEtiket.cshtml" />
+    <Content Include="Views\Home\BaskisizEtiket.cshtml" />
+    <Content Include="Views\Home\SingleProduct.cshtml" />
+    <Content Include="Views\Home\Ribon.cshtml" />
+    <Content Include="Views\Home\Endustriyel.cshtml" />
+    <Content Include="Views\Home\Masaustu.cshtml" />
+    <Content Include="Views\Home\Mobil.cshtml" />
+    <Content Include="Views\Home\BarcodeYazici.cshtml" />
+    <Content Include="Views\Home\BarkodOkuyucu.cshtml" />
+    <Content Include="Views\Home\iletisim.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AboutText.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AboutText.ar1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutText.az.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AboutText.az1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AboutText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AboutText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BarcodeAccessoriesText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BarcodeAccessoriesText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BarcodeAccessoriesText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BarcodeAccessoriesText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BarcodeReaderText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BarcodeReaderText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BarcodeReaderText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BarcodeReaderText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BlankLabelText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlankLabelText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BlankLabelText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BlankLabelText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ContactText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ContactText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DesktopPrinterText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesktopPrinterText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DesktopPrinterText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DesktopPrinterText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndexText.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndexText.ar1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndexText.az.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndexText.az1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndexText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndexText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndexText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndexText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndustrialPrintersText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndustrialPrintersText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IndustrialPrintersText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>IndustrialPrintersText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutText.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutText.ar1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutText.az.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutText.az1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LayoutText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LayoutText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MobilePrinterText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MobilePrinterText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MobilePrinterText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MobilePrinterText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PrintedLabelText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintedLabelText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PrintedLabelText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintedLabelText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RibonText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RibonText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RibonText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RibonText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VisionText.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VisionText.en1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VisionText.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VisionText1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65124</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44364/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

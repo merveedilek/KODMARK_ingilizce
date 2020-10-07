@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KODMARK_new", "KODMARK_new\KODMARK_new.csproj", "{76ABD182-A997-465B-AB7E-4AECADF9B666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76ABD182-A997-465B-AB7E-4AECADF9B666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76ABD182-A997-465B-AB7E-4AECADF9B666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76ABD182-A997-465B-AB7E-4AECADF9B666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76ABD182-A997-465B-AB7E-4AECADF9B666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DA11C2C-E322-4311-96AF-026B18C25073}
+	EndGlobalSection
+EndGlobal
